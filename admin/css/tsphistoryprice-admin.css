@@ -1,0 +1,111 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+.tsphs_table .alert_date input,
+.tsphs_table .trade_date input {
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
+}
+
+
+.tsphs_table tr.next-alert {
+    background-color: #00B050;
+
+}
+
+.tsphs_table tr.active {
+    background-color: #FFC000;
+}
+
+.tsphs_table tr.active td,
+.tsphs_table tr.active input,
+.tsphs_table tr.next-alert td,
+.tsphs_table tr.next-alert input {
+    color: #000;
+}
+
+
+.tsphs_table tr.active .alert_date input {
+    /*color: greenyellow;*/
+}
+
+.tsphs_table .perc-col {
+    position: relative;
+    padding-right: 28px;
+}
+
+.tsphs_table .perc-col input {
+    min-width: 45px;
+    max-width: 66px;
+    /*width: 100%;*/
+}
+
+.tsphs_table tr.active .perc-col input {
+    /*border: ;*/
+}
+
+.tsphs_table .perc-col input + span {
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    line-height: 1;
+    width: 16px;
+    text-align: center;
+}
+
+.tsp-update-form fieldset,
+.tsp-add-alert-form fieldset {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tsp-update-form fieldset input,
+.tsp-update-form fieldset textarea,
+.tsp-add-alert-form fieldset input,
+.tsp-add-alert-form fieldset textarea {
+    margin: 1em 0;
+}
+
+.tsp-update-form fieldset input[type=date],
+.tsp-add-alert-form fieldset input[type=date] {
+    max-width: 160px;
+}
+
+.tsp-update-form fieldset.tsp-perc,
+.tsp-add-alert-form fieldset.tsp-perc {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+.tsp-update-form fieldset.tsp-perc input[type=number],
+.tsp-add-alert-form fieldset.tsp-perc input[type=number] {
+    max-width: 160px;
+    margin-right: 1em;
+}
+
+
+  .pre_table_bottom {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*add new */
+/*.tsp_pre_table #add-new-alert-wrap {*/
+/*    overflow: hidden;*/
+/*    !*height: 0;*!*/
+/*}*/
+
+/*.tsp_pre_table #add-new-alert-wrap.active {*/
+
+/*    height: 100%;*/
+/*}*/
+
